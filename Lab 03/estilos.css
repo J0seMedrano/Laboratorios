@@ -1,7 +1,12 @@
- <style>
-    body{
-      background-color: rgba(0, 0, 0, 0.623);
+ 
+   
+   body{
+      background-color: rgba(164, 202, 167, 0.623);
     }
+      
+.form-group {
+      padding-bottom: 10px;
+    }   
     .form-group label {
       display: block;
       margin-left: 5px;
@@ -25,4 +30,46 @@
       background-color: #2563eb;
       /* Un azul más oscuro al pasar el mouse */
     }
-  </style>
+  .title {
+    font-family: 'Arial', sans-serif;
+    color: #0b3c5d;
+    text-align: center;
+    margin-top: 0;
+  }
+  #main-title {
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+  }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+ 
+}
+nav ul li {
+  margin: 0 15px;
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px
+  border-radius: 5px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+} 
+.menu-item {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+}         
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  
+}

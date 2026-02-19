@@ -73,3 +73,21 @@ nav ul li a {
   text-decoration: none;
   
 }
+#video-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 ;
+}
+section iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border-color: 4px solid #ccccccc4;
+}
+footer, header {
+  text-align: center;
+  padding: 20px;
+  background-color: #b1c8f9;
+  color: white;
+  margin-top: 20px;
+}

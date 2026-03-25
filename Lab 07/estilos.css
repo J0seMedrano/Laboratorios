@@ -2,7 +2,6 @@
   --bg: #0B2D39;
   --accent: #10CFC8;
   --accent2: #EB6763;
-  --accent3: #b09a98;
   --card: #ffffff;
   --muted: #64748b;
   --border: #e5e7eb;
@@ -65,6 +64,21 @@ body {
   gap: 6px;
   min-width: 220px;
   flex: 1;
+}
+
+/* nuevo: limita el ancho del select de orden */
+.field-sort {
+  max-width: 170px;
+  flex: 0 0 170px;
+}
+
+/* nuevo: botones en fila */
+.field-btns {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+  flex: 0 0 auto;
+  min-width: unset;
 }
 
 label {
@@ -135,6 +149,20 @@ select {
   color: #9f1239;
 }
 
+/* nuevo: sin resultados */
+.status-empty {
+  border-color: #fde68a;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+/* nuevo: cargando */
+.status-loading {
+  border-color: rgba(16, 207, 200, .35);
+  background: rgba(16, 207, 200, .07);
+  color: #0B2D39;
+}
+
 /* Table */
 .table-wrap {
   overflow: auto;
@@ -185,22 +213,4 @@ tbody tr:nth-child(even) {
   border: 1px solid rgba(16, 207, 200, .45);
   font-weight: 800;
   font-size: 12px;
-}
-
-.btnEliminar {
-  background: var(--accent2);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 3px;
-  cursor: pointer;
-}
-
-.btnActualizar {
-  background: var(--accent3);
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  padding: 3px;
-  cursor: pointer;
 }

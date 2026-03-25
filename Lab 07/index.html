@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,30 +10,46 @@
     <div class="container">
       <!-- header -->
       <div class="header">
-        <div class="header-title">Laboratorio 6 - Estudiantes</div>
+        <div class="header-title">Laboratorio 7  Estudiantes</div>
         <div class="header-subtitle">Consulta de estudiantes</div>
       </div>
+
       <!-- controles -->
       <div class="card">
-        <div class="field">
-          <input type="text" id="txtSearch" placeholder="Buscar estudiante por nombre" />
-          <button id="btnLoad" class="btn btn-primary" type="button">Consultar</button>
+        <div class="controls">
+          <div class="field">
+            <label for="txtSearch">Buscar por nombre o apellido</label>
+            <input type="text" id="txtSearch" placeholder="Ej: Carlos" />
+          </div>
 
-          <button id="btnClear" class="btn btn-secondary" type="button">Limpiar</button>
+          <div class="field field-sort">
+            <label for="selOrder">Ordenar por nombre</label>
+            <select id="selOrder">
+              <option value="asc">A → Z</option>
+              <option value="desc">Z → A</option>
+            </select>
+          </div>
+
+          <div class="field field-btns">
+            <button id="btnLoad" class="btn btn-primary" type="button">Consultar</button>
+            <button id="btnClear" class="btn btn-secondary" type="button">Limpiar</button>
+          </div>
         </div>
       </div>
+
+      <!-- mensaje de estado -->
+      <div id="statusMsg" class="status status-muted" style="display:none;"></div>
+
       <!-- tabla -->
       <div class="card">
         <div class="table-wrap">
           <table id="tblEstudiantes">
             <thead>
               <tr>
-                <th>ID</th>
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Correo</th>
                 <th>Carrera</th>
-                <th>Acciones</th>
               </tr>
             </thead>
             <tbody id="tbodyStudents"></tbody>
@@ -44,4 +60,3 @@
     <script src="./app.js" type="module"></script>
   </body>
 </html>
- 

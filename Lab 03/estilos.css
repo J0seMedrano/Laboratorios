@@ -91,3 +91,11 @@ footer, header {
   color: white;
   margin-top: 20px;
 }
+.btnEliminar {
+  
+  color: white;
+  border: none;
+  color:aliceblue
+  border-radius:5px;
+  
+}
